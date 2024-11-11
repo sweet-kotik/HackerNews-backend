@@ -25,7 +25,6 @@ app.get('/id', (_, res) => {
 
 app.use('/update', function(req, res) {
     id = req.query.id;
-    res.setHeader('NewsID', id);
     res.send(`<div id="newsPage"></div>`)
 });
 
